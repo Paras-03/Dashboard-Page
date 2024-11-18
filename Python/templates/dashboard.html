@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="dashboard-title">Health Dashboard</h1>
+        <form class="dashboard-form" action="/" method="POST" enctype="multipart/form-data">
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-input" type="text" id="name" name="name" required><br>
+
+            <label class="form-label" for="age">Age:</label>
+            <input class="form-input" type="number" id="age" name="age" required><br>
+
+            <label class="form-label" for="file">Upload File:</label>
+            <input class="form-file" type="file" id="file" name="file"><br>
+
+            <button class="form-submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
