@@ -1,0 +1,100 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+
+.dashboard-form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+  
+
+.form-label {
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+  
+
+.form-input,
+.form-file {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+    align-self: center;
+}
+  
+.form-input:focus,
+.form-file:focus {
+    border-color: #3498db;
+    outline: none;
+}
+  
+
+.form-submit-button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+  
+.form-submit-button:hover {
+    background: #2980b9;
+    transform: scale(1.02);
+}
+  
+.form-submit-button:active {
+    transform: scale(0.98);
+}
+  
+  /* Responsive Design */
+@media (max-width: 600px) {
+    .dashboard-form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .dashboard-title {
+      font-size: 28px;
+    }
+}  
